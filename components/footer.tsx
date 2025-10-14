@@ -1,4 +1,8 @@
 import { Sprout, Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+import Logo from "/public/logo.png"
+
 
 export function Footer() {
   const footerLinks = {
@@ -6,19 +10,19 @@ export function Footer() {
       { label: "Features", href: "#services" },
       { label: "How It Works", href: "#how-it-works" },
       { label: "Download App", href: "#download" },
-      { label: "Pricing", href: "#" },
+      // { label: "Pricing", href: "#" },
     ],
     company: [
       { label: "About Us", href: "#about" },
       { label: "Contact", href: "#contact" },
-      { label: "Careers", href: "#" },
+      // { label: "Careers", href: "#" },
       { label: "Blog", href: "#" },
     ],
     legal: [
       { label: "Terms & Conditions", href: "/terms" },
       { label: "Privacy Policy", href: "/privacy" },
-      { label: "Cookie Policy", href: "#" },
-      { label: "Refund Policy", href: "#" },
+      // { label: "Cookie Policy", href: "#" },
+      // { label: "Refund Policy", href: "#" },
     ],
   }
 
@@ -35,10 +39,9 @@ export function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#home" className="flex items-center gap-2 text-xl font-bold text-primary mb-4">
-              <Sprout className="w-7 h-7" />
-              <span>Emilyagros</span>
-            </a>
+            <Link href="#home" className="flex items-center gap-2 text-xl md:text-2xl font-bold text-primary">
+              <Image src={Logo} alt="Emily-Agros" className="w-7 h-7 md:w-8 md:h-8" />
+            </Link>
             <p className="text-muted-foreground mb-6 max-w-sm leading-relaxed">
               Nigeria's leading agricultural marketplace connecting farmers and buyers for seamless farm produce
               trading.
