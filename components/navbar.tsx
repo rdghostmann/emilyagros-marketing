@@ -41,7 +41,7 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="#home" className="flex items-center gap-2 text-xl md:text-2xl font-bold text-primary">
+          <Link href="/" className="flex items-center gap-2 text-xl md:text-2xl font-bold text-primary">
             <Image src={Logo} alt="Emily-Agros" className="w-8 h-8 md:w-10 md:h-10" />
           </Link>
 
