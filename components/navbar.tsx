@@ -7,6 +7,8 @@ import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import Logo from "/public/logo.png"
 import Image from "next/image"
+
+
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -40,7 +42,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="#home" className="flex items-center gap-2 text-xl md:text-2xl font-bold text-primary">
-            <Image src={Logo} alt="Emily-Agros" className="w-7 h-7 md:w-8 md:h-8" />
+            <Image src={Logo} alt="Emily-Agros" className="w-8 h-8 md:w-10 md:h-10" />
           </Link>
 
           {/* Desktop Navigation */}
