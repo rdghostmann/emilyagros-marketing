@@ -24,7 +24,7 @@ export function Navbar() {
     { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
     { href: "#how-it-works", label: "How It Works" },
-    { href: "#download", label: "Download" },
+    // { href: "#download", label: "Download" },
     { href: "#contact", label: "Contact" },
   ]
 
