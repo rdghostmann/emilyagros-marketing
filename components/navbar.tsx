@@ -20,7 +20,7 @@ export function Navbar() {
   }, [])
 
   const navLinks = [
-    { href: "#home", label: "Home" },
+    // { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
     { href: "#how-it-works", label: "How It Works" },
@@ -44,7 +44,7 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -66,7 +66,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-foreground"
+            className="lg:hidden text-foreground"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
