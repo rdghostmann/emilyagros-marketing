@@ -103,7 +103,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Emilyagros. All rights reserved.</p>
-          <p className="text-sm text-muted-foreground">Made with ❤️ in Nigeria</p>
+          <p className="hidden text-sm text-muted-foreground">Made with ❤️ in Nigeria</p>
         </div>
       </div>
     </footer>

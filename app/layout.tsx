@@ -6,9 +6,10 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import Head from "next/head";
 import "./globals.css"
+import ScrollToTopButton from "@/components/ScrollToTopButton/ScrollToTopButton"
 
 export const metadata: Metadata = {
-  title: "Emilyagros – Nigeria's #1 Agro Marketplace",
+  title: "EmilyAgros – Nigeria's #1 Agro Marketplace",
   description: "Join Nigeria's fastest-growing agricultural marketplace. Connect buyers and sellers of farm produce seamlessly online.",
   icons: {
     icon: "/favicon.png",
@@ -29,6 +30,7 @@ export default function RootLayout({
         cz-shortcut-listen="true" >
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
+        <ScrollToTopButton />
       </body>
     </html>
   )
