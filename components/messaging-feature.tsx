@@ -6,6 +6,9 @@ import { MessageCircle, Zap, Shield, Clock } from "lucide-react"
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import { Smartphone, Download, Star } from "lucide-react"
+import DownloadApp from "/public/Store-Download.png"
+import DownloadApp2 from "/public/Store-Download.png"
+
 
 const features = [
   {
@@ -73,7 +76,7 @@ export function MessagingFeature() {
         style={{ animationDelay: "1s" }}
       />
 
-  
+
 
       <div className=" container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -108,6 +111,9 @@ export function MessagingFeature() {
             <Button size="lg" className="hidden bg-accent hover:bg-accent/90 text-accent-foreground">
               Get Started
             </Button>
+            <div className="bg-accent hover:bg-accent/90 text-accent-foreground w-fit overflow-hidden rounded-md">
+              <Image src={DownloadApp} alt="Download-Button" width={192} height={50} />
+            </div>
           </div>
 
           {/* Phone Mockups */}
