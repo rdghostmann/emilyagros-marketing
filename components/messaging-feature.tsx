@@ -111,7 +111,7 @@ export function MessagingFeature() {
             <Button size="lg" className="hidden bg-accent hover:bg-accent/90 text-accent-foreground">
               Get Started
             </Button>
-            <div className="bg-accent hover:bg-accent/90 text-accent-foreground w-fit overflow-hidden rounded-md">
+            <div className="bg-accent hover:bg-accent/90 cursor-pointer text-accent-foreground w-fit overflow-hidden rounded-md">
               <Image src={DownloadApp} alt="Download-Button" width={192} height={50} />
             </div>
           </div>
