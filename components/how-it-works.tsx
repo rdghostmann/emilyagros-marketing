@@ -25,8 +25,8 @@ export function HowItWorks() {
     {
       icon: ShoppingBag,
       number: "03",
-      title: "List or Buy Produce",
-      description: "Browse thousands of products or list your own farm produce with photos and details.",
+      title: "Sell Produce",
+      description: "Browse thousands of products or sell your own farm produce with photos and details.",
     },
     {
       icon: Rocket,
