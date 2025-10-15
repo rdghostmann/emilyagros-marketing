@@ -9,12 +9,15 @@ import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { MessagingFeature } from "@/components/messaging-feature"
 import { MobileShowcase } from "@/components/mobile-showcase"
+import { CategoriesSection } from "@/components/categories-section"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar />
       <Hero />
+              <CategoriesSection />
+
       <About />
       <Services />
       <HowItWorks />
