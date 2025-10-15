@@ -37,11 +37,11 @@ export function Contact() {
       title: "Call Us",
       details: ["+234 800 123 4567", "+234 800 765 4321"],
     },
-    {
-      icon: MapPin,
-      title: "Visit Us",
-      details: ["Lagos, Nigeria", "Mon - Fri: 9AM - 6PM"],
-    },
+    // {
+    //   icon: MapPin,
+    //   title: "Visit Us",
+    //   details: ["Lagos, Nigeria", "Mon - Fri: 9AM - 6PM"],
+    // },
   ]
 
   return (

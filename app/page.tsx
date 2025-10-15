@@ -7,6 +7,8 @@ import { DownloadApp } from "@/components/download-app"
 import { Testimonials } from "@/components/testimonials"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import { MessagingFeature } from "@/components/messaging-feature"
+import { MobileShowcase } from "@/components/mobile-showcase"
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <About />
       <Services />
       <HowItWorks />
+      <MessagingFeature />
+      {/* <MobileShowcase /> */}
       {/* <DownloadApp /> */}
       <Testimonials />
       <Contact />
