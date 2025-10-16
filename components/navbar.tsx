@@ -41,7 +41,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 text-xl md:text-2xl font-bold text-primary">
-            <Image src={Logo} alt="Emily-Agros" className="w-10 h-10 md:w-14 md:h-1" />
+            <Image src={Logo} alt="Emily-Agros" className="w-10 h-10 md:w-14 md:h-14" />
             <span className="hidden md:inline">EmilyAgros</span>
           </Link>
 
@@ -51,7 +51,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white hover:text-primary transition-colors font-medium"
+                className="text-foreground/50 hover:text-primary transition-colors font-medium"
               >
                 {link.label}
               </Link>
