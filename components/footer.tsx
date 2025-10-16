@@ -28,7 +28,7 @@ export function Footer() {
 
   const socialLinks = [
     { icon: Facebook, href: "https://www.facebook.com/share/17M6ZPmHcd/", label: "Facebook" },
-    { icon: Instagram, href: "https://instagram.com/emilyagros", label: "Instagram" },
+    { icon: Instagram, href: "https://www.instagram.com/emily.agros", label: "Instagram" },
   
   ]
 
