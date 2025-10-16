@@ -45,10 +45,10 @@ export function Contact() {
   ]
 
   // https://maps.app.goo.gl/cT4oFcab3WaZswTE8?g_st=aw 
-// [Home] 0816 881 7063
-// [Home] info@emilyagros.com
-// [Work] emilyagros@gmail.com
-// [Website] emilyagros.com
+  // [Home] 0816 881 7063
+  // [Home] info@emilyagros.com
+  // [Work] emilyagros@gmail.com
+  // [Website] emilyagros.com
 
   return (
     <section id="contact" ref={ref} className="py-20 md:py-32">
@@ -75,17 +75,19 @@ export function Contact() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            {contactInfo.map((info, index) => (
-              <Card key={info.title}>
-                <CardContent className="p-6">
+            {/* <Card key={info.title}>
+                <CardContent className="p-6"> */}
+            {contactInfo.map((info) => (
+              <div key={info.title}>
+                <div className="p-6">
                   <div className="flex gap-4">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <info.icon className="w-6 h-6 text-primary" />
+                      <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                        <info.icon className="w-6 h-6 text-primary-foreground" />
                       </div>
                     </div>
                     <div>
-                      <h3 className="font-bold mb-2">{info.title}</h3>
+                      <h3 className="font-semibold mb-1">{info.title}</h3>
                       {info.details.map((detail, i) => (
                         <p key={i} className="text-sm text-muted-foreground">
                           {detail}
@@ -93,9 +95,11 @@ export function Contact() {
                       ))}
                     </div>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             ))}
+            {/* </CardContent>
+          </Card> */}
           </motion.div>
 
           {/* Contact Form */}
@@ -110,20 +114,27 @@ export function Contact() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium">
-                        Full Name
+                      <label htmlFor="firstname" className="text-sm font-medium">
+                        First Name
                       </label>
-                      <Input id="name" placeholder="John Doe" required />
+                      <Input id="firstname" placeholder="John" required />
                     </div>
+                    <div className="space-y-2">
+                      <label htmlFor="lastname" className="text-sm font-medium">
+                        Last Name
+                      </label>
+                      <Input id="lastname" type="lastname" placeholder="Doe" required />
+                    </div>
+                  </div>
+
+                  <div className="hidden sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label htmlFor="email" className="text-sm font-medium">
                         Email Address
                       </label>
                       <Input id="email" type="email" placeholder="john@example.com" required />
                     </div>
-                  </div>
-
-                  <div className="space-y-2">
+                     <div className="space-y-2">
                     <label htmlFor="inquiry-type" className="text-sm font-medium">
                       Inquiry Type
                     </label>
@@ -138,6 +149,32 @@ export function Contact() {
                       </SelectContent>
                     </Select>
                   </div>
+                  </div>
+                  {/* <div className="grid sm:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label htmlFor="email" className="text-sm font-medium">
+                        Email Address
+                      </label>
+                      <Input id="email" type="email" placeholder="john@example.com" required />
+                    </div>
+                     <div className="space-y-2">
+                    <label htmlFor="inquiry-type" className="text-sm font-medium">
+                      Inquiry Type
+                    </label>
+                    <Select required>
+                      <SelectTrigger id="inquiry-type">
+                        <SelectValue placeholder="Select inquiry type" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="general">General Inquiry</SelectItem>
+                        <SelectItem value="business">Business Partnership</SelectItem>
+                        <SelectItem value="support">Technical Support</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  </div> */}
+
+                 
 
                   <div className="space-y-2">
                     <label htmlFor="message" className="text-sm font-medium">

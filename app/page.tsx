@@ -5,17 +5,17 @@ import { Services } from "@/components/services"
 import { HowItWorks } from "@/components/how-it-works"
 import { Testimonials } from "@/components/testimonials"
 import { Contact } from "@/components/contact"
-import { Footer } from "@/components/footer"
 import { MessagingFeature } from "@/components/messaging-feature"
 import { MobileShowcase } from "@/components/mobile-showcase"
 import { CategoriesSection } from "@/components/categories-section"
 import { HeroSection } from "@/components/hero-section"
 import { StatsSection } from "@/components/stats-section"
+import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* <Navbar /> */}
+      <Navbar />
       <HeroSection />
       <StatsSection />
       {/* <Hero /> */}

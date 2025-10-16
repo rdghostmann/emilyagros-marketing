@@ -26,7 +26,7 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}
+      <body className={`w-full font-sans ${GeistSans.variable} ${GeistMono.variable}`}
         cz-shortcut-listen="true" >
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
