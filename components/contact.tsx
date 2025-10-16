@@ -37,12 +37,18 @@ export function Contact() {
       title: "Call Us",
       details: ["+234 800 123 4567", "+234 800 765 4321"],
     },
-    // {
-    //   icon: MapPin,
-    //   title: "Visit Us",
-    //   details: ["Lagos, Nigeria", "Mon - Fri: 9AM - 6PM"],
-    // },
+    {
+      icon: MapPin,
+      title: "Visit Us",
+      details: ["Lagos, Nigeria", "Mon - Fri: 9AM - 6PM"],
+    },
   ]
+
+  // https://maps.app.goo.gl/cT4oFcab3WaZswTE8?g_st=aw 
+// [Home] 0816 881 7063
+// [Home] info@emilyagros.com
+// [Work] emilyagros@gmail.com
+// [Website] emilyagros.com
 
   return (
     <section id="contact" ref={ref} className="py-20 md:py-32">

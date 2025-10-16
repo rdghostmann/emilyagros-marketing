@@ -27,10 +27,9 @@ export function Footer() {
   }
 
   const socialLinks = [
-    { icon: Facebook, href: "https://facebook.com/emilyagros", label: "Facebook" },
+    { icon: Facebook, href: "https://www.facebook.com/share/17M6ZPmHcd/", label: "Facebook" },
     { icon: Instagram, href: "https://instagram.com/emilyagros", label: "Instagram" },
-    { icon: Twitter, href: "https://twitter.com/emilyagros", label: "Twitter" },
-    { icon: Linkedin, href: "https://linkedin.com/company/emilyagros", label: "LinkedIn" },
+  
   ]
 
   return (
