@@ -127,7 +127,7 @@ export function Contact() {
                     </div>
                   </div>
 
-                  <div className="hidden sm:grid-cols-2 gap-6">
+                  <div className="grid sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label htmlFor="email" className="text-sm font-medium">
                         Email Address
@@ -150,29 +150,6 @@ export function Contact() {
                     </Select>
                   </div>
                   </div>
-                  {/* <div className="grid sm:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium">
-                        Email Address
-                      </label>
-                      <Input id="email" type="email" placeholder="john@example.com" required />
-                    </div>
-                     <div className="space-y-2">
-                    <label htmlFor="inquiry-type" className="text-sm font-medium">
-                      Inquiry Type
-                    </label>
-                    <Select required>
-                      <SelectTrigger id="inquiry-type">
-                        <SelectValue placeholder="Select inquiry type" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="general">General Inquiry</SelectItem>
-                        <SelectItem value="business">Business Partnership</SelectItem>
-                        <SelectItem value="support">Technical Support</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  </div> */}
 
                  
 
