@@ -30,17 +30,17 @@ export function Contact() {
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@emilyagros.com", "agro@emilyagros.com", "admin@emilyagros.com"],
+      details: ["info@emilyagros.com", "emilyagros@gmail.com"],
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+234 800 123 4567", "+234 800 765 4321"],
+      details: ["+234 816 881 7063", "+234 703 032 4697"],
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["Lagos, Nigeria", "Mon - Fri: 9AM - 6PM"],
+      details: ["Kwang 930103, Plateau, Nigeria", "Mon - Fri: 9AM - 6PM"],
     },
   ]
 
