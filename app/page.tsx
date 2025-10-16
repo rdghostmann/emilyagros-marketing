@@ -18,7 +18,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <StatsSection />
-      <Hero />
+      {/* <Hero /> */}
       <CategoriesSection />
       <About />
       <Services />
