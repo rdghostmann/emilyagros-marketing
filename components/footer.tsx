@@ -40,6 +40,7 @@ export function Footer() {
                     <div className="lg:col-span-2">
                         <Link href="#home" className="flex items-center gap-2 text-xl md:text-2xl font-bold text-primary">
                             <Image src={Logo} alt="Emily-Agros" className="w-7 h-7 md:w-8 md:h-8" />
+                            <span className="hidden md:inline">EmilyAgros</span>
                         </Link>
                         <p className="text-muted-foreground mb-6 max-w-sm leading-relaxed">
                             Nigeria's leading agricultural marketplace connecting farmers and buyers for seamless farm produce
@@ -64,7 +65,7 @@ export function Footer() {
 
                     {/* Links */}
                     <div>
-                        <h3 className="font-bold mb-4">Product</h3>
+                        <h3 className="font-bold mb-4">Quick Links</h3>
                         <ul className="space-y-3">
                             {footerLinks.product.map((link) => (
                                 <li key={link.label}>
