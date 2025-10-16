@@ -15,12 +15,12 @@ import { StatsSection } from "@/components/stats-section"
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection />
       <StatsSection />
       {/* <Hero /> */}
       <CategoriesSection />
-      <About />
+      {/* <About /> */}
       <Services />
       <HowItWorks />
       <MessagingFeature />

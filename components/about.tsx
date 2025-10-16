@@ -3,13 +3,13 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Target, Users, TrendingUp } from "lucide-react"
+import { Target, Users, TrendingUp, Leaf } from "lucide-react"
 
 export function About() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
-  const values = [
+ const values = [
     {
       icon: Target,
       title: "Our Mission",
@@ -25,6 +25,12 @@ export function About() {
       icon: TrendingUp,
       title: "Growth Focused",
       description: "Empowering agricultural businesses to scale through product boosting and market insights.",
+    },
+    {
+      icon: Leaf,
+      title: "Sustainable Practices",
+      description:
+        "Promoting eco-friendly farming and responsible sourcing to ensure long-term productivity and environmental stewardship.",
     },
   ]
 
