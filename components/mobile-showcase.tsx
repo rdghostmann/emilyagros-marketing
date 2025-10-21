@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Button } from "../components/ui/button"
 import { Smartphone, Download, Star } from "lucide-react"
 import ScreenUI1 from "../public/UI1.png"
+import Link from "next/link"
 
 export function MobileShowcase() {
   const [mounted, setMounted] = useState(false)
@@ -12,19 +13,19 @@ export function MobileShowcase() {
 
   const phoneScreens = [
     {
-      imageT: "UI1.png",
+      imageT: "/UI1.png",
       image: ScreenUI1,
       title: "Andriod Version",
       description: "Execute trades with professional-grade tools",
     },
     {
-      imageT: "UI1.png",
+      imageT: "/UI1.png",
       image: ScreenUI1,
       title: "iOS Version",
       description: "Monitor your portfolio with live market data",
     },
     {
-      imageT: "UI1.png",
+      imageT: "/UI1.png",
       image: ScreenUI1,
       title: "Web Version",
       description: "Access worldwide crypto markets 24/7",
@@ -66,14 +67,12 @@ export function MobileShowcase() {
               <div className="crypto-card p-6 rounded-xl">
                 {/* <Smartphone className="h-12 w-12 text-primary mb-4" /> */}
                 <Image src="/user-interface.png" alt="Intuitive Design" width={40} height={40} className="mb-3 sm:mb-4 md:size-16" />
-
                 <h4 className="text-xl font-bold mb-2">Intuitive Design</h4>
                 <p className="text-muted-foreground">Clean, modern interface designed for both beginners and pros</p>
               </div>
               <div className="crypto-card p-6 rounded-xl">
                 {/* <Star className="h-12 w-12 text-accent mb-4" /> */}
                 <Image src="/good-rating.png" alt="Good Rating" width={40} height={40} className="mb-3 sm:mb-4 md:size-16" />
-
                 <h4 className="text-xl font-bold mb-2">5-Star Rated</h4>
                 <p className="text-muted-foreground">Trusted by millions of users worldwide</p>
               </div>
@@ -125,7 +124,15 @@ export function MobileShowcase() {
                 >
                   <div className="w-full h-full rounded-[2rem] lg:rounded-[2.5rem] overflow-hidden bg-none">
                     <Image
+                      // src="/UI1.png"
                       src={screen.imageT || "/placeholder.svg"}
+                      alt={screen.title}
+                      fill
+                      className="object-cover"
+                    />
+                    <Image
+                      src="/UI1.png"
+                      // src={screen.imageT || "/placeholder.svg"}
                       alt={screen.title}
                       fill
                       className="object-cover"
