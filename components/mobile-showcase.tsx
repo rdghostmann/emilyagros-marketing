@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Image from "next/image"
 import { Button } from "../components/ui/button"
 import { Smartphone, Download, Star } from "lucide-react"
+import ScreenUI1 from "../public/UI1.png"
 
 export function MobileShowcase() {
   const [mounted, setMounted] = useState(false)
@@ -11,18 +12,21 @@ export function MobileShowcase() {
 
   const phoneScreens = [
     {
-      image: "/UI1.png",
-      title: "Andriod-Version",
+      imageT: "UI1.png",
+      image: ScreenUI1,
+      title: "Andriod Version",
       description: "Execute trades with professional-grade tools",
     },
     {
-      image: "/UI1.png",
-      title: "iOS-Version",
+      imageT: "UI1.png",
+      image: ScreenUI1,
+      title: "iOS Version",
       description: "Monitor your portfolio with live market data",
     },
     {
-      image: "/UI1.png",
-      title: "Web-Version",
+      imageT: "UI1.png",
+      image: ScreenUI1,
+      title: "Web Version",
       description: "Access worldwide crypto markets 24/7",
     },
   ]
@@ -96,20 +100,14 @@ export function MobileShowcase() {
                     }`}
                   style={{ zIndex: phoneScreens.length - Math.abs(index - currentPhone) }}
                 >
-                  {/* <div className="relative w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-[3rem] p-2 shadow-2xl"> */}
-                  <div className="relative w-full h-full  rounded-[3rem] p-2 shadow-2xl">
-                    <div className="w-full h-full rounded-[2.5rem] overflow-hidden">
-                    {/* <div className="w-full h-full rounded-[2.5rem] overflow-hidden bg-black"> */}
-                      <Image
-                        src={screen.image || "/placeholder.svg"}
-                        alt={screen.title}
-                        fill
-                        className="object-cover"
-                      />
-                    {/* </div> */}
-                    </div>
+                  <div className="w-full h-full rounded-[2rem] lg:rounded-[2.5rem] overflow-hidden bg-none">
+                    <Image
+                      src={screen.imageT || "/placeholder.svg"}
+                      alt={screen.title}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                  {/* </div> */}
                 </div>
               ))}
             </div>
