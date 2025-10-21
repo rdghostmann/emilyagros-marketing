@@ -64,23 +64,46 @@ export function MobileShowcase() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="crypto-card p-6 rounded-xl">
-                <Smartphone className="h-12 w-12 text-primary mb-4" />
+                {/* <Smartphone className="h-12 w-12 text-primary mb-4" /> */}
+                <Image src="/user-interface.png" alt="Intuitive Design" width={40} height={40} className="mb-3 sm:mb-4 md:size-16" />
+
                 <h4 className="text-xl font-bold mb-2">Intuitive Design</h4>
                 <p className="text-muted-foreground">Clean, modern interface designed for both beginners and pros</p>
               </div>
               <div className="crypto-card p-6 rounded-xl">
-                <Star className="h-12 w-12 text-accent mb-4" />
+                {/* <Star className="h-12 w-12 text-accent mb-4" /> */}
+                <Image src="/good-rating.png" alt="Good Rating" width={40} height={40} className="mb-3 sm:mb-4 md:size-16" />
+
                 <h4 className="text-xl font-bold mb-2">5-Star Rated</h4>
                 <p className="text-muted-foreground">Trusted by millions of users worldwide</p>
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-xl px-8 py-4 animate-glow">
-                <Download className="mr-2 h-5 w-5" />
-                Download Now
-              </Button>
-              <Button size="lg" variant="outline" className="text-xl px-8 py-4 neon-border bg-transparent">
+            {/* Responsive Buttons: Stacks on mobile, inline on small and up */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              {/* <Button size="lg" className="bg-primary hover:bg-primary/90 text-base sm:text-xl px-6 sm:px-8 py-3 sm:py-6 animate-glow w-full sm:w-auto"> */}
+              <Download className="hidden mr-2 h-5 w-5" />
+              {/* Download Now */}
+              <Link href="#" className="block">
+                <Image
+                  src="/playstore-download.png"
+                  alt="Download on App Store and Google Play"
+                  width={200}
+                  height={60}
+                  className="rounded-md"
+                />
+              </Link>
+              <Link href="#" className="block">
+                <Image
+                  src="/appstore-download.png"
+                  alt="Download on App Store "
+                  width={200}
+                  height={60}
+                  className="rounded-md"
+                />
+              </Link>
+              {/* </Button> */}
+              <Button size="lg" variant="outline" className="hidden text-base sm:text-xl px-6 sm:px-8 py-3 sm:py-4 neon-border bg-transparent w-full sm:w-auto">
                 View Features
               </Button>
             </div>
