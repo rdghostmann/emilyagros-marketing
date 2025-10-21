@@ -8,6 +8,8 @@ import Image from "next/image"
 import { Smartphone, Download, Star } from "lucide-react"
 import DownloadApp from "/public/Store-Download.png"
 import DownloadApp2 from "/public/Store-Download.png"
+import ScreenUI1 from "../public/UI1.png"
+import Link from "next/link"
 
 
 const features = [
@@ -39,20 +41,24 @@ export function MessagingFeature() {
   const [mounted, setMounted] = useState(false)
   const [currentPhone, setCurrentPhone] = useState(0)
 
+
   const phoneScreens = [
     {
-      image: "/mobileimage.jpg",
-      title: "Andriod-Version",
+      imageT: "/UI1.png",
+      image: ScreenUI1,
+      title: "Andriod Version",
       description: "Execute trades with professional-grade tools",
     },
     {
-      image: "/mobileimage.jpg",
-      title: "iOS-Version",
+      imageT: "/UI1.png",
+      image: ScreenUI1,
+      title: "iOS Version",
       description: "Monitor your portfolio with live market data",
     },
     {
-      image: "/mobileimage.jpg",
-      title: "Web-Version",
+      imageT: "/UI1.png",
+      image: ScreenUI1,
+      title: "Web Version",
       description: "Access worldwide crypto markets 24/7",
     },
   ]
@@ -108,11 +114,33 @@ export function MessagingFeature() {
                 )
               })}
             </div>
-            <Button size="lg" className="hidden bg-accent hover:bg-accent/90 text-accent-foreground">
-              Get Started
-            </Button>
-            <div className="bg-accent hover:bg-accent/90 cursor-pointer text-accent-foreground w-fit overflow-hidden rounded-md">
-              <Image src={DownloadApp} alt="Download-Button" width={192} height={50} />
+            {/* Responsive Buttons: Stacks on mobile, inline on small and up */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              {/* <Button size="lg" className="bg-primary hover:bg-primary/90 text-base sm:text-xl px-6 sm:px-8 py-3 sm:py-6 animate-glow w-full sm:w-auto"> */}
+              <Download className="hidden mr-2 h-5 w-5" />
+              {/* Download Now */}
+              <Link href="#" className="block">
+                <Image
+                  src="/playstore-download.png"
+                  alt="Download on App Store and Google Play"
+                  width={200}
+                  height={60}
+                  className="rounded-md"
+                />
+              </Link>
+              <Link href="#" className="block">
+                <Image
+                  src="/appstore-download.png"
+                  alt="Download on App Store "
+                  width={200}
+                  height={60}
+                  className="rounded-md"
+                />
+              </Link>
+              {/* </Button> */}
+              <Button size="lg" variant="outline" className="hidden text-base sm:text-xl px-6 sm:px-8 py-3 sm:py-4 neon-border bg-transparent w-full sm:w-auto">
+                View Features
+              </Button>
             </div>
           </div>
 

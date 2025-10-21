@@ -24,7 +24,7 @@ export default function Home() {
       <Services />
       <HowItWorks />
       <MessagingFeature />
-      {/* <MobileShowcase /> */}
+      <MobileShowcase />
       {/* <DownloadApp /> */}
       <Testimonials />
       <Contact />
