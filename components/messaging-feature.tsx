@@ -15,21 +15,25 @@ import Link from "next/link"
 const features = [
   {
     icon: MessageCircle,
+    imageT: "/chat.png",
     title: "Real-time Chat",
     description: "Instant messaging with suppliers for quick negotiations",
   },
   {
     icon: Zap,
+    imageT: "/zap.png",
     title: "Intutive Design",
     description: "Clean, modern interface designed for both beginners and pros",
   },
   {
     icon: Shield,
+    imageT: "/shield.png",
     title: "Secure Platform",
     description: "All conversations are encrypted and protected",
   },
   {
     icon: Clock,
+    imageT: "/support.png",
     title: "24/7 Support",
     description: "Round-the-clock customer support for your queries",
   },
@@ -119,6 +123,20 @@ export function MessagingFeature() {
                   </div>
                 )
               })}
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="crypto-card p-6 rounded-xl">
+                {/* <Smartphone className="h-12 w-12 text-primary mb-4" /> */}
+                <Image src="/user-interface.png" alt="Intuitive Design" width={40} height={40} className="mb-3 sm:mb-4 md:size-16" />
+                <h4 className="text-xl font-bold mb-2">Intuitive Design</h4>
+                <p className="text-muted-foreground">Clean, modern interface designed for both beginners and pros</p>
+              </div>
+              <div className="crypto-card p-6 rounded-xl">
+                {/* <Star className="h-12 w-12 text-accent mb-4" /> */}
+                <Image src="/good-rating.png" alt="Good Rating" width={40} height={40} className="mb-3 sm:mb-4 md:size-16" />
+                <h4 className="text-xl font-bold mb-2">5-Star Rated</h4>
+                <p className="text-muted-foreground">Trusted by millions of users worldwide</p>
+              </div>
             </div>
             {/* Responsive Buttons: Stacks on mobile, inline on small and up */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
