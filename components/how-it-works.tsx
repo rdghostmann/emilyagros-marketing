@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Download, UserPlus, ShoppingBag, Rocket } from "lucide-react"
+import Image from "next/image"
 
 export function HowItWorks() {
   const ref = useRef(null)
@@ -12,24 +13,28 @@ export function HowItWorks() {
   const steps = [
     {
       icon: Download,
+      imageT: "/download.png",
       number: "01",
       title: "Download App",
       description: "Get the Emilyagros app from Google Play or App Store and install it on your device.",
     },
     {
       icon: UserPlus,
+      imageT: "/website.png",
       number: "02",
       title: "Register Account",
       description: "Create your account in minutes with basic information and start your trading journey.",
     },
     {
       icon: ShoppingBag,
+      imageT: "/salary.png",
       number: "03",
       title: "Sell Produce",
       description: "Browse thousands of products or sell your own farm produce with photos and details.",
     },
     {
       icon: Rocket,
+      imageT: "/boost.png",
       number: "04",
       title: "Boost Sales",
       description: "Use our product boosting feature to increase visibility and reach more potential buyers.",
@@ -65,8 +70,10 @@ export function HowItWorks() {
               >
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center shadow-lg">
-                      <step.icon className="w-8 h-8 text-primary-foreground" />
+                    {/* <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center shadow-lg"> */}
+                    <div className="w-16 h-16  rounded-xl flex items-center justify-center shadow-lg">
+                      <Image src={step.imageT} alt={step.title} width={32} height={32} className="w-full h-full object-contain" />
+                      {/* <step.icon className="w-8 h-8 text-primary-foreground" /> */}
                     </div>
                   </div>
                   <div className="flex-1 pt-1">
