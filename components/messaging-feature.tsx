@@ -50,13 +50,19 @@ export function MessagingFeature() {
       description: "Execute trades with professional-grade tools",
     },
     {
-      imageT: "/UI1.png",
+      imageT: "/UI2.png",
       image: ScreenUI1,
       title: "iOS Version",
       description: "Monitor your portfolio with live market data",
     },
     {
-      imageT: "/UI1.png",
+      imageT: "/UI3.png",
+      image: ScreenUI1,
+      title: "Web Version",
+      description: "Access worldwide crypto markets 24/7",
+    },
+    {
+      imageT: "/CategoriesUI.png",
       image: ScreenUI1,
       title: "Web Version",
       description: "Access worldwide crypto markets 24/7",
@@ -146,7 +152,7 @@ export function MessagingFeature() {
 
           {/* Phone Mockups */}
           <div className="relative flex justify-center items-center">
-            <div className="relative w-80 h-[600px]">
+            <div className="border border-black  relative w-80 h-[600px]">
               {phoneScreens.map((screen, index) => (
                 <div
                   key={index}
@@ -159,7 +165,7 @@ export function MessagingFeature() {
                   style={{ zIndex: phoneScreens.length - Math.abs(index - currentPhone) }}
                 >
                   <div className="relative w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-[3rem] p-2 shadow-2xl">
-                    <div className="w-full h-full rounded-[2.5rem] overflow-hidden bg-black">
+                    <div className="w-full h-full p-4 rounded-[2.5rem] overflow-hidden bg-black">
                       <Image
                         src={screen.image || "/placeholder.svg"}
                         alt={screen.title}

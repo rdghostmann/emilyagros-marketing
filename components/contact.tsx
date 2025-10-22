@@ -35,7 +35,7 @@ export function Contact() {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+234 816 881 7063", "+234 703 032 4697"],
+      details: ["+234 816 881 7063", "+234 915 936 8743"],
     },
     {
       icon: MapPin,
@@ -43,7 +43,7 @@ export function Contact() {
       details: ["Kwang 930103, Plateau, Nigeria", "Mon - Fri: 9AM - 6PM"],
     },
   ]
-
+// +2349159368743 
   // https://maps.app.goo.gl/cT4oFcab3WaZswTE8?g_st=aw 
   // [Home] 0816 881 7063
   // [Home] info@emilyagros.com

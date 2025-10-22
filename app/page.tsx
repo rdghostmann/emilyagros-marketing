@@ -18,15 +18,13 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <StatsSection />
-      {/* <Hero /> */}
       <CategoriesSection />
-      {/* <About /> */}
+      {/* <About /> Removed About */}
       <Services />
       <HowItWorks />
       <MessagingFeature />
-      <MobileShowcase />
-      {/* <DownloadApp /> */}
       <Testimonials />
+      <MobileShowcase />
       <Contact />
       <Footer />
     </main>

@@ -8,17 +8,22 @@ import Link from "next/link"
 import Logo from "/public/logo.png"
 import Image from "next/image"
 
-
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
-    }
+    const handleScroll = () => setIsScrolled(window.scrollY > 20)
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsMobileMenuOpen(false)
+    }
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
   }, [])
 
   const navLinks = [
@@ -26,7 +31,6 @@ export function Navbar() {
     { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
     { href: "#how-it-works", label: "How It Works" },
-    // { href: "#download", label: "Download" },
     { href: "#contact", label: "Contact" },
   ]
 
@@ -34,6 +38,8 @@ export function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
+      role="navigation"
+      aria-label="Main navigation"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-transparent"
         }`}
     >
@@ -41,17 +47,17 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 text-xl md:text-2xl font-bold text-primary">
-            <Image src={Logo} alt="Emily-Agros" className="w-10 h-10 md:w-14 md:h-14" />
+            <Image src={Logo} alt="Emily-Agros" className="w-10 h-10 md:w-14 md:h-14 object-contain" />
             <span className="hidden md:inline">EmilyAgros</span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          {/* Desktop Navigation (shows from md and up) */}
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-foreground/50 hover:text-primary transition-colors font-medium"
+                className={`${isScrolled ? "text-foreground/50" : "text-white"} hover:text-primary transition-colors font-medium`}
               >
                 {link.label}
               </Link>
@@ -59,18 +65,21 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-4">
-            {/* CTA Button */}
+            {/* CTA Button (hidden on small screens) */}
             <div className="hidden md:block">
               <Button size="lg" className="font-semibold">
                 Get Started
               </Button>
             </div>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile Menu Button (visible on small screens) */}
             <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden text-foreground"
+              onClick={() => setIsMobileMenuOpen((s) => !s)}
+              className={`md:hidden ${isScrolled ? "text-foreground" : "text-white"}`}
               aria-label="Toggle menu"
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
+              type="button"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -78,22 +87,23 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu (mobile-first: hidden at md and above) */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
+            id="mobile-menu"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background border-t border-border"
+            className="md:hidden bg-background border-t border-border overflow-hidden"
           >
-            <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
+            <div className="container mx-auto px-4 py-4 flex flex-col gap-3">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-foreground/80 hover:text-primary transition-colors font-medium py-2"
+                  className={`${isScrolled ? "text-foreground/80" : "text-white"} hover:text-primary transition-colors font-medium py-2`}
                 >
                   {link.label}
                 </Link>
