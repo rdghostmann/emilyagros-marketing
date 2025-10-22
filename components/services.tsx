@@ -25,7 +25,7 @@ export function Services() {
     },
     {
       icon: Truck,
-      imageT: "/spice_2230543.png",
+      imageT: "/logistics_12577049.png",
       title: "Agro Logistics",
       description: "Reliable delivery services ensuring your produce reaches customers fresh and on time.",
     },
@@ -37,7 +37,7 @@ export function Services() {
     },
     {
       icon: TrendingUp,
-      imageT: "/product-boost.png",
+      imageT: "/boost_5579796.png",
       title: "Product Boosting",
       description: "Increase your product visibility and sales with our targeted promotion features.",
     },
