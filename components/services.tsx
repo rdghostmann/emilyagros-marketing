@@ -47,6 +47,12 @@ export function Services() {
       title: "Secure Transactions",
       description: "Trade with confidence using our secure payment system and buyer protection.",
     },
+    {
+      icon: Shield,
+      imageT: "/personal-guarantee_4318327.png",
+      title: "Verified Seller",
+      description: "Trade only with sellers who have been verified for authenticity and reliability.",
+    },
   ]
 
   return (
