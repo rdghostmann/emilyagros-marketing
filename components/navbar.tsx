@@ -57,7 +57,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`${isScrolled ? "text-foreground/50" : "text-white"} hover:text-primary transition-colors font-medium`}
+                className={`${isScrolled ? "text-foreground/50" : "text-white"} hover:text-primary transition-colors font-medium text-base md:text-lg`}
               >
                 {link.label}
               </Link>

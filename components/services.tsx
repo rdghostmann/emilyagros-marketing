@@ -19,7 +19,7 @@ export function Services() {
     },
     {
       icon: Store,
-      imageT: "/spice_2230543.png",
+      imageT: "/sale_7910062.png",
       title: "Sell Your Goods",
       description: "List your agricultural products and reach thousands of potential buyers instantly.",
     },
@@ -31,7 +31,7 @@ export function Services() {
     },
     {
       icon: Package,
-      imageT: "/spice_2230543.png",
+      imageT: "/wholesale_16963079.png",
       title: "Wholesale Support",
       description: "Special pricing and support for bulk orders and wholesale agricultural trading.",
     },
@@ -75,9 +75,8 @@ export function Services() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group bg-card p-6 md:p-8 rounded-xl border border-border hover:border-primary/50 hover:shadow-lg transition-all"
             >
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-                {/* <service.icon className="w-6 h-6 text-primary" /> */}
-                <Image src={service.imageT} alt={service.title} width={24} height={24} />
+              <div className="w-12 h-12 p-2 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+                <Image src={service.imageT} alt={service.title} width={24} height={24} className="w-full h-full object-contain" />
               </div>
               <h3 className="text-lg font-bold mb-3">{service.title}</h3>
               <p className="text-muted-foreground leading-relaxed text-sm">{service.description}</p>
