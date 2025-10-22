@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { ShoppingCart, Store, Truck, Package, TrendingUp, Shield } from "lucide-react"
+import Image from "next/image"
 
 export function Services() {
   const ref = useRef(null)
@@ -12,31 +13,37 @@ export function Services() {
   const services = [
     {
       icon: ShoppingCart,
+      imageT: "/organic_1971004.png",
       title: "Buy Farm Produce",
       description: "Access fresh farm produce directly from verified farmers across Nigeria with competitive pricing.",
     },
     {
       icon: Store,
+      imageT: "/spice_2230543.png",
       title: "Sell Your Goods",
       description: "List your agricultural products and reach thousands of potential buyers instantly.",
     },
     {
       icon: Truck,
+      imageT: "/spice_2230543.png",
       title: "Agro Logistics",
       description: "Reliable delivery services ensuring your produce reaches customers fresh and on time.",
     },
     {
       icon: Package,
+      imageT: "/spice_2230543.png",
       title: "Wholesale Support",
       description: "Special pricing and support for bulk orders and wholesale agricultural trading.",
     },
     {
       icon: TrendingUp,
+      imageT: "/product-boost.png",
       title: "Product Boosting",
       description: "Increase your product visibility and sales with our targeted promotion features.",
     },
     {
       icon: Shield,
+      imageT: "/protection.png",
       title: "Secure Transactions",
       description: "Trade with confidence using our secure payment system and buyer protection.",
     },
@@ -69,7 +76,8 @@ export function Services() {
               className="group bg-card p-6 md:p-8 rounded-xl border border-border hover:border-primary/50 hover:shadow-lg transition-all"
             >
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-                <service.icon className="w-6 h-6 text-primary" />
+                {/* <service.icon className="w-6 h-6 text-primary" /> */}
+                <Image src={service.imageT} alt={service.title} width={24} height={24} />
               </div>
               <h3 className="text-lg font-bold mb-3">{service.title}</h3>
               <p className="text-muted-foreground leading-relaxed text-sm">{service.description}</p>
