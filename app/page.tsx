@@ -22,10 +22,10 @@ export default function Home() {
       {/* <About /> Removed About */}
       <Services />
       <HowItWorks />
-      <MessagingFeature />
+      {/* <MessagingFeature /> */}
       <Testimonials />
-      <MobileShowcase />
-      <Contact />
+      {/* <MobileShowcase /> */}
+      {/* <Contact /> */}
       <Footer />
     </main>
   )
