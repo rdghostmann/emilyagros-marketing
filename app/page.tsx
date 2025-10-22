@@ -14,7 +14,7 @@ import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen w-full bg-red-50">
       <Navbar />
       <HeroSection />
       <StatsSection />

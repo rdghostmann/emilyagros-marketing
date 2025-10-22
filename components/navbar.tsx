@@ -103,7 +103,7 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`${isScrolled ? "text-foreground/80" : "text-white"} hover:text-primary transition-colors font-medium py-2`}
+                  className={`${isScrolled ? "text-foreground/80" : "text-gray-800"} hover:text-primary transition-colors font-medium py-2`}
                 >
                   {link.label}
                 </Link>
