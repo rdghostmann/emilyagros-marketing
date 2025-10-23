@@ -52,12 +52,12 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Navigation (shows from md and up) */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`${isScrolled ? "text-foreground/50" : "text-white"} hover:text-primary transition-colors font-medium text-base md:text-lg`}
+                className={`${isScrolled ? "text-foreground/50" : "text-white"} hover:text-primary transition-colors font-medium text-sm `}
               >
                 {link.label}
               </Link>
@@ -75,7 +75,7 @@ export function Navbar() {
             {/* Mobile Menu Button (visible on small screens) */}
             <button
               onClick={() => setIsMobileMenuOpen((s) => !s)}
-              className={`md:hidden ${isScrolled ? "text-foreground" : "text-white"}`}
+              className={`lg:hidden ${isScrolled ? "text-foreground" : "text-white"}`}
               aria-label="Toggle menu"
               aria-expanded={isMobileMenuOpen}
               aria-controls="mobile-menu"
@@ -95,7 +95,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background border-t border-border overflow-hidden"
+            className="lg:hidden bg-background border-t border-border overflow-hidden"
           >
             <div className="container mx-auto px-4 py-4 flex flex-col gap-3">
               {navLinks.map((link) => (

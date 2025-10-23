@@ -43,7 +43,7 @@ export function Contact() {
       details: ["Kwang 930103, Plateau, Nigeria", "Mon - Fri: 9AM - 6PM"],
     },
   ]
-// +2349159368743 
+  // +2349159368743 
   // https://maps.app.goo.gl/cT4oFcab3WaZswTE8?g_st=aw 
   // [Home] 0816 881 7063
   // [Home] info@emilyagros.com
@@ -57,7 +57,7 @@ export function Contact() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto text-center mb-16"
+          className="max-w-10/12 mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance">
             Get In <span className="text-primary">Touch</span>
@@ -134,24 +134,26 @@ export function Contact() {
                       </label>
                       <Input id="email" type="email" placeholder="john@example.com" required />
                     </div>
-                     <div className="space-y-2">
-                    <label htmlFor="inquiry-type" className="text-sm font-medium">
-                      Inquiry Type
-                    </label>
-                    <Select required>
-                      <SelectTrigger id="inquiry-type">
-                        <SelectValue placeholder="Select inquiry type" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="general">General Inquiry</SelectItem>
-                        <SelectItem value="business">Business Partnership</SelectItem>
-                        <SelectItem value="support">Technical Support</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
+                    <div className="space-y-2">
+                      <label htmlFor="inquiry-type" className="text-sm font-medium">
+                        Inquiry Type
+                      </label>
+                     <div>
+                       <Select required>
+                        <SelectTrigger id="inquiry-type">
+                          <SelectValue placeholder="Select inquiry type" />
+                        </SelectTrigger>
+                        <SelectContent className="">
+                          <SelectItem value="general">General Inquiry</SelectItem>
+                          <SelectItem value="business">Business Partnership</SelectItem>
+                          <SelectItem value="support">Technical Support</SelectItem>
+                        </SelectContent>
+                      </Select>
+                     </div>
+                    </div>
                   </div>
 
-                 
+
 
                   <div className="space-y-2">
                     <label htmlFor="message" className="text-sm font-medium">

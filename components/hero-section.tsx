@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section className="relative bg-primary text-primary-foreground py-20 md:py-32">
       <div className="absolute inset-0 bg-[url('/agricultural-farm-field-landscape.jpg')] bg-cover bg-center opacity-50
-      " />
+ " />
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4">

@@ -81,7 +81,7 @@ export function Services() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group bg-card p-6 md:p-8 rounded-xl border border-border hover:border-primary/50 hover:shadow-lg transition-all"
             >
-              <div className="w-12 h-12 p-2 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+              <div className="w-12 h-12 p-1 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
                 <Image src={service.imageT} alt={service.title} width={24} height={24} className="w-full h-full object-contain" />
               </div>
               <h3 className="text-lg font-bold mb-3">{service.title}</h3>

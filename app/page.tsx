@@ -19,13 +19,12 @@ export default function Home() {
       <HeroSection />
       <StatsSection />
       <CategoriesSection />
-      {/* <About /> Removed About */}
       <Services />
       <HowItWorks />
-      <MessagingFeature />
+      {/* <MessagingFeature /> */}
       <Testimonials />
       {/* <MobileShowcase /> */}
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </main>
   )

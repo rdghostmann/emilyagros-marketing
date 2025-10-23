@@ -29,10 +29,11 @@ export function CategoriesSection() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 md:gap-6">
+        {/* <div className="hidden grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 md:gap-6"> */}
           {categories.map((category) => {
             const Icon = category.icon
             return (
-              <button
+              <div
                 key={category.name}
                 className="group relative overflow-hidden rounded-xl border bg-card hover:shadow-lg transition-all duration-300 p-6 text-left"
               >
@@ -42,7 +43,7 @@ export function CategoriesSection() {
                   <Icon className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="font-semibold text-sm md:text-base text-balance">{category.name}</h3>
-              </button>
+              </div>
             )
           })}
         </div>
