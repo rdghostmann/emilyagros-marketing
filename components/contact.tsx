@@ -53,10 +53,10 @@ export function Contact() {
   return (
     <section id="contact" ref={ref} className="py-20 md:py-32">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+        <div
+          // initial={{ opacity: 0, y: 30 }}
+          // animate={isInView ? { opacity: 1, y: 0 } : {}}
+          // transition={{ duration: 0.6 }}
           className="max-w-10/12 mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance">
@@ -65,14 +65,14 @@ export function Contact() {
           <p className="text-lg text-muted-foreground text-balance">
             Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </p>
-        </motion.div>
+        </div>
 
         <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-8">
           {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6 }}
+          <div
+            // initial={{ opacity: 0, x: -30 }}
+            // animate={isInView ? { opacity: 1, x: 0 } : {}}
+            // transition={{ duration: 0.6 }}
             className="space-y-6"
           >
             {/* <Card key={info.title}>
@@ -100,13 +100,13 @@ export function Contact() {
             ))}
             {/* </CardContent>
           </Card> */}
-          </motion.div>
+          </div>
 
           {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
+          <div
+            // initial={{ opacity: 0, x: 30 }}
+            // animate={isInView ? { opacity: 1, x: 0 } : {}}
+            // transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:col-span-2"
           >
             <Card>
@@ -168,7 +168,7 @@ export function Contact() {
                 </form>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

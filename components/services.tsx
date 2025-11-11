@@ -58,10 +58,10 @@ export function Services() {
   return (
     <section id="services" ref={ref} className="py-20 md:py-32">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+        <div
+          // initial={{ opacity: 0, y: 30 }}
+          // animate={isInView ? { opacity: 1, y: 0 } : {}}
+          // transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance">
@@ -70,15 +70,15 @@ export function Services() {
           <p className="text-lg text-muted-foreground text-balance">
             Everything you need to succeed in agricultural trading, all in one platform.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
-            <motion.div
+            <div
               key={service.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              // initial={{ opacity: 0, y: 30 }}
+              // animate={isInView ? { opacity: 1, y: 0 } : {}}
+              // transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group bg-card p-6 md:p-8 rounded-xl border border-border hover:border-primary/50 hover:shadow-lg transition-all"
             >
               <div className="w-12 h-12 p-1 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
@@ -86,7 +86,7 @@ export function Services() {
               </div>
               <h3 className="text-lg font-bold mb-3">{service.title}</h3>
               <p className="text-muted-foreground leading-relaxed text-sm">{service.description}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

@@ -79,12 +79,12 @@ export function Testimonials() {
             <CardContent className="p-8 md:p-12">
               <Quote className="w-12 h-12 text-primary/20 mb-6" />
 
-              <motion.div
+              <div
                 key={currentIndex}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.3 }}
+                // initial={{ opacity: 0, x: 20 }}
+                // animate={{ opacity: 1, x: 0 }}
+                // exit={{ opacity: 0, x: -20 }}
+                // transition={{ duration: 0.3 }}
               >
                 <p className="text-lg md:text-xl text-foreground mb-8 leading-relaxed">
                   "{testimonials[currentIndex].content}"
@@ -99,7 +99,7 @@ export function Testimonials() {
                     <div className="text-muted-foreground">{testimonials[currentIndex].role}</div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </CardContent>
           </Card>
 

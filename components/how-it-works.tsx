@@ -44,10 +44,10 @@ export function HowItWorks() {
   return (
     <section id="how-it-works" ref={ref} className=" py-20 md:py-32 bg-muted/30">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+        <div
+          // initial={{ opacity: 0, y: 30 }}
+          // animate={isInView ? { opacity: 1, y: 0 } : {}}
+          // transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance">
@@ -56,17 +56,17 @@ export function HowItWorks() {
           <p className="text-lg text-muted-foreground text-balance">
             Get started with Emilyagros in four simple steps and join Nigeria's thriving agricultural marketplace.
           </p>
-        </motion.div>
+        </div>
 
         {/* <div className="max-w-5xl mx-auto"> */}
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             {steps.map((step, index) => (
-              <motion.div
+              <div
                 key={step.number}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.6, delay: index * 0.15 }}
+                // initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
+                // animate={isInView ? { opacity: 1, x: 0 } : {}}
+                // transition={{ duration: 0.6, delay: index * 0.15 }}
                 className="relative"
               >
                 <div className="flex gap-6">
@@ -81,7 +81,7 @@ export function HowItWorks() {
                     <p className="text-muted-foreground leading-relaxed">{step.description}</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
