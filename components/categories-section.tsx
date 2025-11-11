@@ -5,11 +5,11 @@ const categories = [
   { name: "Tractor / Farm Machines", image:  "/tractors-farm-equipment.png", icon: Tractor, color: "bg-chart-1" },
   { name: "Grains & Cereals", image:  "/seedlings.png", icon: Wheat, color: "bg-chart-2" },
   { name: "Fresh Fruits", image:  "/food-fruits-veg.png", icon: Apple, color: "bg-chart-3" },
-  { name: "Vegetables", image:  "", icon: Leaf, color: "bg-chart-4" },
-  { name: "Irrigation Equipment", image:  "", icon: Droplet, color: "bg-chart-5" },
-  { name: "Seeds & Fertilizers", image:  "", icon: Sprout, color: "bg-chart-1" },
-  { name: "Packaged Products", image:  "", icon: Package, color: "bg-chart-2" },
-  { name: "Logistics & Transport", image:  "", icon: Truck, color: "bg-chart-3" },
+  { name: "Vegetables", image:  "/food-vegetables.png", icon: Leaf, color: "bg-chart-4" },
+  { name: "Irrigation Equipment", image:  "/irrigation-equipment.png", icon: Droplet, color: "bg-chart-5" },
+  { name: "Seeds & Fertilizers", image:  "/seeds-fertilizers.png", icon: Sprout, color: "bg-chart-1" },
+  { name: "Packaged Products", image:  "/packaged-products.png", icon: Package, color: "bg-chart-2" },
+  { name: "Logistics & Transport", image:  "/logistics-transport.png", icon: Truck, color: "bg-chart-3" },
 ]
 
 export function CategoriesSection() {
