@@ -30,7 +30,7 @@ export default function RootLayout({
       </Head>
       <body className={`w-full font-sans ${GeistSans.variable} ${GeistMono.variable}`}
         cz-shortcut-listen="true" >
-        {/* <Navbar /> */}
+        <Navbar />
         <main>{children}</main>
         <Footer />
         {/* <Analytics /> */}
