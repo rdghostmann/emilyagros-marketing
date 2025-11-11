@@ -153,7 +153,7 @@ export function MessagingFeature() {
           </div>
 
           {/* Phone Mockups */}
-          <div className="relative flex justify-center items-center">
+          <div className="relative flex justify-center items-center px-">
             <div className="border border-black  relative w-80 h-[600px]">
               {phoneScreens.map((screen, index) => (
                 <div
@@ -166,7 +166,7 @@ export function MessagingFeature() {
                     }`}
                   style={{ zIndex: phoneScreens.length - Math.abs(index - currentPhone) }}
                 >
-                  <div className="relative w-full h-full bg-transparent rounded-[3rem] ">
+                  <div className="border border-black flex items-center justify-center relative w-full h-full bg-transparent rounded-[3rem] ">
                     <div className="w-full h-full rounded-[2.5rem] overflow-hidden bg-transparent">
                       <Image
                         src={screen.image || "/placeholder.svg"}
@@ -176,7 +176,7 @@ export function MessagingFeature() {
                         width={280}
                         height={516}
                         // fill
-                        className="object-contain"
+                        className="object-cover"
                       />
                     </div>
                   </div>
