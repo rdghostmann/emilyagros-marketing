@@ -72,7 +72,7 @@ export function HowItWorks() {
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 p-1 bg-none rounded-md flex items-center justify-center shadow-md">
-                      <Image src={step.imageT} alt={step.title} width={32} height={32} className="w-full h-full object-contain" />
+                      <Image src={step.imageT} alt={step.title} width={32} height={32} className="w-full h-full object-contain" priority />
                     </div>
                   </div>
                   <div className="flex-1 pt-1">

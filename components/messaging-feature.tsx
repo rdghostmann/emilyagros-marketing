@@ -171,8 +171,12 @@ export function MessagingFeature() {
                       <Image
                         src={screen.image || "/placeholder.svg"}
                         alt={screen.title}
-                        fill
-                        className="object-cover"
+                        // width={3640}
+                        // height={6712}
+                        width={280}
+                        height={516}
+                        // fill
+                        className="object-contain"
                       />
                     </div>
                   </div>
