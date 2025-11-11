@@ -20,7 +20,7 @@ export default function Home() {
       <CategoriesSection />
       <Services />
       <HowItWorks />
-      {/* <MessagingFeature /> */}
+      <MessagingFeature />
       <Testimonials />
       {/* <MobileShowcase /> */}
       <Contact />
