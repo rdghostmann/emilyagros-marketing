@@ -17,7 +17,7 @@ export default function Home() {
     <main className="min-h-screen w-full bg-green-50">
       <HeroSection />
       <StatsSection />
-      {/* <CategoriesSection /> */}
+      <CategoriesSection />
       <Services />
       <HowItWorks />
       {/* <MessagingFeature /> */}
