@@ -15,25 +15,25 @@ import Link from "next/link"
 const features = [
   {
     icon: MessageCircle,
-    imageT: "/chat.png",
+    imageT: "/sync.png",
     title: "Real-time Chat",
     description: "Instant messaging with suppliers for quick negotiations",
   },
   {
     icon: Zap,
-    imageT: "/zap.png",
+    imageT: "/sync.png",
     title: "Intutive Design",
     description: "Clean, modern interface designed for both beginners and pros",
   },
   {
     icon: Shield,
-    imageT: "/shield.png",
+    imageT: "/sync.png",
     title: "Secure Platform",
     description: "All conversations are encrypted and protected",
   },
   {
     icon: Clock,
-    imageT: "/support.png",
+    imageT: "/sync.png",
     title: "24/7 Support",
     description: "Round-the-clock customer support for your queries",
   },
@@ -85,14 +85,10 @@ export function MessagingFeature() {
   return (
     <section className="py-16 md:py-24 bg-primary text-primary-foreground">
 
-      {/* Parallax background elements */}
-      {/* <div className="absolute top-20 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-neon"></div> */}
       <div
         className="absolute bottom-20 right-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl animate-pulse-neon"
         style={{ animationDelay: "1s" }}
       />
-
-
 
       <div className=" container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -161,35 +157,28 @@ export function MessagingFeature() {
                   className={`absolute inset-0 transition-all duration-1000 transform ${index === currentPhone
                     ? "opacity-100 scale-100 rotate-0"
                     : index === (currentPhone + 1) % phoneScreens.length
-                      ? "opacity-60 scale-95 rotate-3 translate-x-8"
-                      : "opacity-30 scale-90 -rotate-3 -translate-x-8"
+                      ? "opacity-60 scale-95 rotate-3 translate-x-4"
+                      : "opacity-30 scale-90 -rotate-3 -translate-x-4"
                     }`}
                   style={{ zIndex: phoneScreens.length - Math.abs(index - currentPhone) }}
                 >
-                  <div className="border border-black flex items-center justify-center relative w-full h-full bg-transparent rounded-[3rem] ">
+                  <div className="relative w-full h-full bg-transparent rounded-[3rem] ">
                     <div className="w-full h-full rounded-[2.5rem] overflow-hidden bg-transparent">
                       <Image
                         src={screen.image || "/placeholder.svg"}
                         alt={screen.title}
-                        // width={3640}
-                        // height={6712}
-                        width={280}
-                        height={516}
-                        // fill
+                        width={3640}
+                        height={6712}
+                        // width={280}
+                        // height={516}
                         className="object-cover"
+                        priority
                       />
                     </div>
                   </div>
                 </div>
               ))}
             </div>
-
-            {/* Floating elements */}
-            {/* <div className="absolute -top-10 -right-10 w-20 h-20 bg-primary/20 rounded-full animate-float blur-sm" />
-            <div
-              className="absolute -bottom-10 -left-10 w-16 h-16 bg-accent/20 rounded-full animate-float blur-sm"
-              style={{ animationDelay: "1s" }}
-            /> */}
           </div>
         </div>
       </div>
