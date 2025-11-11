@@ -86,7 +86,7 @@ export function MessagingFeature() {
     <section className="py-16 md:py-24 bg-primary text-primary-foreground">
 
       {/* Parallax background elements */}
-      <div className="absolute top-20 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-neon"></div>
+      {/* <div className="absolute top-20 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-neon"></div> */}
       <div
         className="absolute bottom-20 right-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl animate-pulse-neon"
         style={{ animationDelay: "1s" }}
@@ -181,11 +181,11 @@ export function MessagingFeature() {
             </div>
 
             {/* Floating elements */}
-            <div className="absolute -top-10 -right-10 w-20 h-20 bg-primary/20 rounded-full animate-float blur-sm" />
+            {/* <div className="absolute -top-10 -right-10 w-20 h-20 bg-primary/20 rounded-full animate-float blur-sm" />
             <div
               className="absolute -bottom-10 -left-10 w-16 h-16 bg-accent/20 rounded-full animate-float blur-sm"
               style={{ animationDelay: "1s" }}
-            />
+            /> */}
           </div>
         </div>
       </div>
