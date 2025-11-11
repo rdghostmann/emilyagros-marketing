@@ -167,7 +167,6 @@ export function MessagingFeature() {
                   style={{ zIndex: phoneScreens.length - Math.abs(index - currentPhone) }}
                 >
                   <div className="relative w-full h-full bg-transparent rounded-[3rem] ">
-                    {/* <div className="relative w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-[3rem] p-2 shadow-2xl"> */}
                     <div className="w-full h-full rounded-[2.5rem] overflow-hidden bg-transparent">
                       <Image
                         src={screen.image || "/placeholder.svg"}

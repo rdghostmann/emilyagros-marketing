@@ -7,6 +7,8 @@ import { Suspense } from "react"
 import Head from "next/head";
 import "./globals.css"
 import ScrollToTopButton from "@/components/ScrollToTopButton/ScrollToTopButton"
+import { Footer } from "@/components/footer"
+import { Navbar } from "@/components/navbar"
 
 export const metadata: Metadata = {
   title: "EmilyAgros – Nigeria's #1 Agro Marketplace",
@@ -28,9 +30,11 @@ export default function RootLayout({
       </Head>
       <body className={`w-full font-sans ${GeistSans.variable} ${GeistMono.variable}`}
         cz-shortcut-listen="true" >
-        <Suspense fallback={null}>{children}</Suspense>
-        <Analytics />
-        <ScrollToTopButton />
+        {/* <Navbar /> */}
+        <main>{children}</main>
+        <Footer />
+        {/* <Analytics /> */}
+        {/* <ScrollToTopButton /> */}
       </body>
     </html>
   )
