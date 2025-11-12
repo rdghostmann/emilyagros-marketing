@@ -8,10 +8,10 @@ import Image from "next/image"
 import { Smartphone, Download, Star } from "lucide-react"
 import DownloadApp from "/public/Store-Download.png"
 import DownloadApp2 from "/public/Store-Download.png"
-import ScreenUI1 from "../public/ui1.png"
-import ScreenUI2 from "../public/ui2.png"
-import ScreenUI3 from "../public/ui3.png"
-import ScreenUI4 from "../public/CategoriesUI.png"
+// import ScreenUI1 from "../public/ui1.png"
+// import ScreenUI2 from "../public/ui2.png"
+// import ScreenUI3 from "../public/ui3.png"
+// import ScreenUI4 from "../public/CategoriesUI.png"
 import Link from "next/link"
 
 
@@ -52,25 +52,25 @@ export function MessagingFeature() {
   const phoneScreens = [
     {
       imageT: "/ui1.png",
-      image: ScreenUI1,
+      // image: ScreenUI1,
       title: "Andriod Version",
       description: "Execute trades with professional-grade tools",
     },
     {
       imageT: "/ui2.png",
-      image: ScreenUI2,
+      // image: ScreenUI2,
       title: "iOS Version",
       description: "Monitor your portfolio with live market data",
     },
     {
-      imageT: "/Ui3.png",
-      image: ScreenUI3,
+      imageT: "/ui3.png",
+      // image: ScreenUI3,
       title: "Web Version",
       description: "Access worldwide crypto markets 24/7",
     },
     {
       imageT: "/CategoriesUI.png",
-      image: ScreenUI4,
+      // image: ScreenUI4,
       title: "Web Version",
       description: "Access worldwide crypto markets 24/7",
     },
@@ -168,7 +168,7 @@ export function MessagingFeature() {
                   <div className="relative w-full h-full bg-transparent rounded-[3rem] ">
                     <div className="w-full h-full rounded-[2.5rem] overflow-hidden bg-transparent">
                       <Image
-                        src={screen.image}
+                        src={screen.imageT}
                         alt={screen.title}
                         width={3640}
                         height={6712}
