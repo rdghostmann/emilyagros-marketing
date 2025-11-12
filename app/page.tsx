@@ -18,6 +18,7 @@ export default function Home() {
       <HeroSection />
       <StatsSection />
       <CategoriesSection />
+      <About />
       <Services />
       <HowItWorks />
       <MessagingFeature />
