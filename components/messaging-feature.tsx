@@ -169,7 +169,7 @@ export function MessagingFeature() {
                     <div className="w-full h-full rounded-[2.5rem] overflow-hidden bg-transparent">
                       <Image
                         src={screen.imageT}
-                        alt={screen.title}
+                        alt=""
                         width={3640}
                         height={6712}
                         // width={280}
