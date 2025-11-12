@@ -86,7 +86,7 @@ export function MessagingFeature() {
 
   if (!mounted) return null
   return (
-    <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+    <section id="download" className="py-16 md:py-24 bg-primary text-primary-foreground">
 
       <div
         className="absolute bottom-20 right-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl animate-pulse-neon"

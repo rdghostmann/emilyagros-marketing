@@ -7,13 +7,13 @@ import Logo from "/public/logo.png"
 export function Footer() {
     const footerLinks = {
         product: [
-            { label: "Features", href: "#services" },
-            { label: "How It Works", href: "#how-it-works" },
-            { label: "Download App", href: "#download" },
+            { label: "Features", href: "/#services" },
+            { label: "How It Works", href: "/#how-it-works" },
+            { label: "Download App", href: "/#download" },
         ],
         company: [
-            { label: "About Us", href: "#about" },
-            { label: "Contact", href: "#contact" },
+            { label: "About Us", href: "/#about" },
+            { label: "Contact", href: "/#contact" },
             // { label: "Careers", href: "#" },
             // { label: "Blog", href: "#" },
         ],
