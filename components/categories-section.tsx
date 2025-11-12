@@ -35,7 +35,7 @@ export function CategoriesSection() {
             return (
               <div
                 key={category.name}
-                className="group relative overflow-hidden rounded-xl border bg-card hover:shadow-lg transition-all duration-300 p-1 text-left"
+                className="group relative overflow-hidden rounded-xl border bg-card hover:shadow-lg transition-all duration-300 p-2 md:p-4 text-left"
               >
                 <div
                   className={`${category.color} w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}
