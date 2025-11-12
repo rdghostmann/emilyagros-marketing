@@ -20,10 +20,10 @@ export function CategoriesSection() {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-balance mb-2">Browse by Category</h2>
             <p className="text-muted-foreground text-pretty">
-              Explore our wide range of agricultural products and services
+              Explore our wide range of agricultural products and services in our app
             </p>
           </div>
-          <Button variant="outline" className="hidden sm:flex bg-transparent">
+          <Button variant="outline" className="hidden bg-transparent">
             View All
           </Button>
         </div>
