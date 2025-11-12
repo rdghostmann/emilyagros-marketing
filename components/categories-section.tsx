@@ -28,7 +28,7 @@ export function CategoriesSection() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 md:gap-6">
         {/* <div className="hidden grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 md:gap-6"> */}
           {categories.map((category) => {
             const Icon = category.icon
@@ -38,7 +38,7 @@ export function CategoriesSection() {
                 className="group relative overflow-hidden rounded-xl border bg-card hover:shadow-lg transition-all duration-300 p-6 text-left"
               >
                 <div
-                  className={`${category.color} w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}
+                  className={`${category.color} w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}
                 >
 
                   <Icon className="h-6 w-6 text-white" />
