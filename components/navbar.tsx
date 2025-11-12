@@ -44,11 +44,11 @@ export function Navbar() {
         }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between py-4 h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 text-xl md:text-2xl font-bold text-primary">
-            <Image src={Logo} alt="Emily-Agros" className="w-10 h-10 md:w-14 md:h-14 object-contain" />
-            <span className="hidden md:inline">EmilyAgros</span>
+          <Link href="/" className="flex items-center gap-2 ">
+            <Image src={Logo} alt="Emily-Agros" className="w-14 h-14 md:w-14 md:h-16 object-contain" />
+            <span className={`text-xl md:text-2xl font-bold transition-all duration-300 ${isScrolled ? "text-primary" : "text-white"}`}>EmilyAgros</span>
           </Link>
 
           {/* Desktop Navigation (shows from md and up) */}

@@ -10,13 +10,12 @@ export function Footer() {
             { label: "Features", href: "#services" },
             { label: "How It Works", href: "#how-it-works" },
             { label: "Download App", href: "#download" },
-            // { label: "Pricing", href: "#" },
         ],
         company: [
             { label: "About Us", href: "#about" },
             { label: "Contact", href: "#contact" },
             // { label: "Careers", href: "#" },
-            { label: "Blog", href: "#" },
+            // { label: "Blog", href: "#" },
         ],
         legal: [
             { label: "Terms & Conditions", href: "/terms" },
@@ -38,9 +37,9 @@ export function Footer() {
                 <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
                     {/* Brand */}
                     <div className="lg:col-span-2">
-                        <Link href="#home" className="flex items-center gap-2 text-xl md:text-2xl font-bold text-primary">
-                            <Image src={Logo} alt="Emily-Agros" className="w-7 h-7 md:w-8 md:h-8" />
-                            <span className="hidden md:inline">EmilyAgros</span>
+                        <Link href="/" className="flex items-center gap-2 ">
+                            <Image src={Logo} alt="Emily-Agros" className="w-14 h-14 md:w-14 md:h-16 object-contain" />
+                            <span className="text-xl md:text-2xl font-bold text-primary">EmilyAgros</span>
                         </Link>
                         <p className="text-muted-foreground mb-6 max-w-sm leading-relaxed">
                             Nigeria's leading agricultural marketplace connecting farmers and buyers for seamless farm produce
@@ -48,7 +47,7 @@ export function Footer() {
                         </p>
                         <div className="flex gap-3">
                             {socialLinks.map((social) => (
-                                <a
+                                <Link
                                     key={social.label}
                                     href={social.href}
                                     target="_blank"
@@ -58,7 +57,7 @@ export function Footer() {
                                     aria-label={social.label}
                                 >
                                     <social.icon className="w-5 h-5" />
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     </div>
@@ -82,9 +81,9 @@ export function Footer() {
                         <ul className="space-y-3">
                             {footerLinks.company.map((link) => (
                                 <li key={link.label}>
-                                    <a href={link.href} className="text-muted-foreground hover:text-primary transition-colors">
+                                    <Link href={link.href} className="text-muted-foreground hover:text-primary transition-colors">
                                         {link.label}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
@@ -95,9 +94,9 @@ export function Footer() {
                         <ul className="space-y-3">
                             {footerLinks.legal.map((link) => (
                                 <li key={link.label}>
-                                    <a href={link.href} className="text-muted-foreground hover:text-primary transition-colors">
+                                    <Link href={link.href} className="text-muted-foreground hover:text-primary transition-colors">
                                         {link.label}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
@@ -106,7 +105,7 @@ export function Footer() {
 
                 {/* Bottom */}
                 <div className="pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
-                    <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} EmilyAgros. All rights reserved.</p>
+                    <p className="text-center text-sm text-muted-foreground">© {new Date().getFullYear()} EmilyAgros.<br className="block lg:hidden" /> All rights reserved</p>
                     <p className="hidden text-sm text-muted-foreground">Made with ❤️ in Nigeria</p>
                 </div>
             </div>
