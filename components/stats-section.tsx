@@ -38,7 +38,7 @@ export function StatsSection() {
               <IconComponent className="w-8 h-8 text-primary" />
             </div>
             <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.value}</div>
-            <div className="hidden text-sm md:text-base text-muted-foreground font-medium">{stat.label}</div>
+            <div className="hidden md:block text-sm md:text-base text-muted-foreground font-medium">{stat.label}</div>
             <div className="text-xs text-muted-foreground/70">{stat.description}</div>
           </div>
         )
