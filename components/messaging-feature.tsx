@@ -112,7 +112,7 @@ export function MessagingFeature() {
                 return (
                   <div key={feature.title} className="flex gap-3 group cursor-pointer">
                     <div className="h-10 md:h-14 w-10 md:w-14 rounded-lg bg-transparent flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:-translate-y-1">
-                      <Image src={feature.imageT} alt={feature.title} width={40} height={40} className="border border-white mb-3 sm:mb-4 md:size-16" />
+                      <Image src={feature.imageT} alt={feature.title} width={40} height={40} className="border border-white w-fit h-fit mb-3 sm:mb-4" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{feature.title}</h3>
