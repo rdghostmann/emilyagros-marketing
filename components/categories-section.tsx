@@ -43,7 +43,7 @@ export function CategoriesSection() {
 
                   <Icon className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-semibold text-xs md:text-sm text-balance">{category.name}</h3>
+                <h3 className="font-semibold text-[8px] md:text-xs text-balance">{category.name}</h3>
               </div>
             )
           })}
