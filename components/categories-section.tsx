@@ -2,14 +2,14 @@ import { Tractor, Wheat, Apple, Leaf, Droplet, Package, Sprout, Truck } from "lu
 import { Button } from "@/components/ui/button"
 
 const categories = [
-  { name: "Tractor / Farm Machines", image:  "/tractors-farm-equipment.png", icon: Tractor, color: "bg-chart-1" },
-  { name: "Grains & Cereals", image:  "/seedlings.png", icon: Wheat, color: "bg-chart-2" },
-  { name: "Fresh Fruits", image:  "/food-fruits-veg.png", icon: Apple, color: "bg-chart-3" },
-  { name: "Vegetables", image:  "/food-vegetables.png", icon: Leaf, color: "bg-chart-4" },
-  { name: "Irrigation Equipment", image:  "/irrigation-equipment.png", icon: Droplet, color: "bg-chart-5" },
-  { name: "Seeds & Fertilizers", image:  "/seeds-fertilizers.png", icon: Sprout, color: "bg-chart-1" },
-  { name: "Packaged Products", image:  "/packaged-products.png", icon: Package, color: "bg-chart-2" },
-  { name: "Logistics & Transport", image:  "/logistics-transport.png", icon: Truck, color: "bg-chart-3" },
+  { name: "Tractor / Farm Machines", image: "/tractors-farm-equipment.png", icon: Tractor, color: "bg-chart-1" },
+  { name: "Grains & Cereals", image: "/seedlings.png", icon: Wheat, color: "bg-chart-2" },
+  { name: "Fresh Fruits", image: "/food-fruits-veg.png", icon: Apple, color: "bg-chart-3" },
+  { name: "Vegetables", image: "/food-vegetables.png", icon: Leaf, color: "bg-chart-4" },
+  { name: "Irrigation Equipment", image: "/irrigation-equipment.png", icon: Droplet, color: "bg-chart-5" },
+  { name: "Seeds & Fertilizers", image: "/seeds-fertilizers.png", icon: Sprout, color: "bg-chart-1" },
+  { name: "Packaged Products", image: "/packaged-products.png", icon: Package, color: "bg-chart-2" },
+  { name: "Logistics & Transport", image: "/logistics-transport.png", icon: Truck, color: "bg-chart-3" },
 ]
 
 export function CategoriesSection() {
@@ -29,7 +29,7 @@ export function CategoriesSection() {
         </div>
 
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 md:gap-6">
-        {/* <div className="hidden grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 md:gap-6"> */}
+          {/* <div className="hidden grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 md:gap-6"> */}
           {categories.map((category) => {
             const Icon = category.icon
             return (
@@ -43,7 +43,7 @@ export function CategoriesSection() {
 
                   <Icon className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-semibold text-[8px] md:text-xs text-balance">{category.name}</h3>
+                <h3 className="font-semibold text-[10px] md:text-sm text-balance">{category.name}</h3>
               </div>
             )
           })}
