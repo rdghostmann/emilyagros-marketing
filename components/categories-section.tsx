@@ -49,7 +49,7 @@ export function CategoriesSection() {
           })}
         </div>
 
-        <div className="mt-6 sm:hidden">
+        <div className="mt-6 hidden">
           <Button variant="outline" className="w-full bg-transparent">
             View All Categories
           </Button>
