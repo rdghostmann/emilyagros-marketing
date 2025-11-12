@@ -14,7 +14,7 @@ export function HeroSection() {
               Connect, Trade, and Grow Your  <span className="text-accent">Agricultural Business</span>
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 text-pretty max-w-2xl mx-auto">
-              Source fresh agricultural products directly from trusted suppliers. Instant messaging, verified suppliers,
+              Source fresh agricultural products directly from trusted suppliers. <br className="block md:hidden" /> Instant messaging, verified suppliers,
               and guaranteed delivery.
             </p>
           </div>
