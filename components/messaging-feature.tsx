@@ -18,25 +18,25 @@ import Link from "next/link"
 const features = [
   {
     icon: MessageCircle,
-    imageT: "/sync.png",
+    imageT: "/chat.png",
     title: "Real-time Chat",
     description: "Instant messaging with suppliers for quick negotiations",
   },
   {
     icon: Zap,
-    imageT: "/sync.png",
+    imageT: "/ux.png",
     title: "Intutive Design",
     description: "Clean, modern interface designed for both beginners and pros",
   },
   {
     icon: Shield,
-    imageT: "/sync.png",
+    imageT: "/security.png",
     title: "Secure Platform",
     description: "All conversations are encrypted and protected",
   },
   {
     icon: Clock,
-    imageT: "/sync.png",
+    imageT: "/24-hours.png",
     title: "24/7 Support",
     description: "Round-the-clock customer support for your queries",
   },
@@ -110,9 +110,9 @@ export function MessagingFeature() {
             <div className="grid sm:grid-cols-2 gap-6 mb-8">
               {features.map((feature) => {
                 return (
-                  <div key={feature.title} className="flex gap-3">
-                    <div className="h-10 w-10 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
-                      <Image src={feature.imageT} alt="Intuitive Design" width={40} height={40} className="mb-3 sm:mb-4 md:size-16" />
+                  <div key={feature.title} className="flex gap-3 group cursor-pointer">
+                    <div className="h-10 w-10 rounded-lg bg-transparent flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:-translate-y-1">
+                      <Image src={feature.imageT} alt={feature.title} width={40} height={40} className="mb-3 sm:mb-4 md:size-16" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{feature.title}</h3>
