@@ -36,8 +36,8 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-lg md:text-xl text-primary-foreground/90 text-pretty max-w-2xl mx-auto">
-              Source fresh agricultural products directly from trusted suppliers. <br className="block md:hidden" /> Instant messaging, verified suppliers,
-              and guaranteed delivery.
+              Source fresh agricultural products/services directly from trusted suppliers. <br className="block md:hidden" /> <span className="hidden lg:block">Instant messaging, verified suppliers,
+              and guaranteed delivery.</span>
             </motion.p>
           </div>
         </div>
