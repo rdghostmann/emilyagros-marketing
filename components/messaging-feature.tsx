@@ -8,7 +8,10 @@ import Image from "next/image"
 import { Smartphone, Download, Star } from "lucide-react"
 import DownloadApp from "/public/Store-Download.png"
 import DownloadApp2 from "/public/Store-Download.png"
-import ScreenUI1 from "../public/UI1.png"
+import ScreenUI1 from "../public/ui1.png"
+import ScreenUI2 from "../public/ui2.png"
+import ScreenUI3 from "../public/ui3.png"
+import ScreenUI4 from "../public/CategoriesUI.png"
 import Link from "next/link"
 
 
@@ -48,26 +51,26 @@ export function MessagingFeature() {
 
   const phoneScreens = [
     {
-      imageT: "/UI1.png",
+      imageT: "/ui1.png",
       image: ScreenUI1,
       title: "Andriod Version",
       description: "Execute trades with professional-grade tools",
     },
     {
-      imageT: "/UI2.png",
-      image: ScreenUI1,
+      imageT: "/ui2.png",
+      image: ScreenUI2,
       title: "iOS Version",
       description: "Monitor your portfolio with live market data",
     },
     {
-      imageT: "/UI3.png",
-      image: ScreenUI1,
+      imageT: "/Ui3.png",
+      image: ScreenUI3,
       title: "Web Version",
       description: "Access worldwide crypto markets 24/7",
     },
     {
       imageT: "/CategoriesUI.png",
-      image: ScreenUI1,
+      image: ScreenUI4,
       title: "Web Version",
       description: "Access worldwide crypto markets 24/7",
     },
@@ -149,23 +152,23 @@ export function MessagingFeature() {
           </div>
 
           {/* Phone Mockups */}
-          <div className="relative flex justify-center items-center px-">
-            <div className="border border-black  relative w-80 h-[600px]">
+          <div className="relative flex justify-center items-center">
+            <div className="relative w-60 h-[500px] sm:w-80 md:h-[600px]">
               {phoneScreens.map((screen, index) => (
                 <div
                   key={index}
                   className={`absolute inset-0 transition-all duration-1000 transform ${index === currentPhone
                     ? "opacity-100 scale-100 rotate-0"
                     : index === (currentPhone + 1) % phoneScreens.length
-                      ? "opacity-60 scale-95 rotate-3 translate-x-4"
-                      : "opacity-30 scale-90 -rotate-3 -translate-x-4"
+                      ? "opacity-60 scale-95 rotate-3 translate-x-8"
+                      : "opacity-30 scale-90 -rotate-3 -translate-x-8"
                     }`}
                   style={{ zIndex: phoneScreens.length - Math.abs(index - currentPhone) }}
                 >
                   <div className="relative w-full h-full bg-transparent rounded-[3rem] ">
                     <div className="w-full h-full rounded-[2.5rem] overflow-hidden bg-transparent">
                       <Image
-                        src={screen.image || "/placeholder.svg"}
+                        src={screen.image}
                         alt={screen.title}
                         width={3640}
                         height={6712}
