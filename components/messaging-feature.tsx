@@ -170,10 +170,10 @@ export function MessagingFeature() {
                       <Image
                         src={screen.imageT}
                         alt=""
-                        width={3640}
-                        height={6712}
-                        // width={280}
-                        // height={516}
+                        // width={3640}
+                        // height={6712}
+                        width={280}
+                        height={516}
                         className="object-cover"
                         priority
                       />
